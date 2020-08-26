@@ -1,6 +1,8 @@
 <<<<<<< HEAD
 # BPJSTK2
 =======
+
+untuk menggunakan menu admin akses dengan : 127.0.0.1:8000/cs
 username buat CSnya = ruly
 passnya = 23071996R kalau bukan R gede pake r kecil
 
