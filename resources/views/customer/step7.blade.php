@@ -73,9 +73,9 @@ birdSound.play();
             <div class="text-center">
 			
 					<div class="form-group">
-						<b>File Gambar</b><br/>
-						<input type="file" name="s_tabung" accept="image/*" capture="camera" required="">
-						<img id="frame">
+					<label class="cameraButton">Take a picture
+						<input type="file" name="s_tabung" accept="image/*;capture=camera"  required="">
+						</label>
 					</div>
       </div>
 	  <input type="submit" value="Upload" class="btn btn-primary">
@@ -86,15 +86,27 @@ birdSound.play();
                 </div>
             </div>
         </div>
-			<script>
-  var camera = document.getElementById('camera');
-  var frame = document.getElementById('frame');
+		<script>
+  label.cameraButton {
+  display: inline-block;
+  margin: 1em 0;
 
-  camera.addEventListener('change', function(e) {
-    var file = e.target.files[0]; 
-    // Do something with the image file.
-    frame.src = URL.createObjectURL(file);
-  });
+  /* Styles to make it look like a button */
+  padding: 0.5em;
+  border: 2px solid #666;
+  border-color: #EEE #CCC #CCC #EEE;
+  background-color: #DDD;
+}
+
+/* Look like a clicked/depressed button */
+label.cameraButton:active {
+  border-color: #CCC #EEE #EEE #CCC;
+}
+
+/* This is the part that actually hides the 'Choose file' text box for camera inputs */
+label.cameraButton input[accept*="camera"] {
+  display: none;
+}
 </script>
     </div>
 	
