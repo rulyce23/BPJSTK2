@@ -81,18 +81,18 @@ class CsController extends Controller
 		  public function edit($id)
     {
 		 $data = Customer::find($id);
+		 $data2 = User::all();
 	
 
-        return view('cs.dashboard.edit',['data'=>$data]);
+        return view('cs.dashboard.edit',['data'=>$data,'data2'=>$data2]);
     }
 	
 		  public function editpost($id,Request $request)
     {
-		
+	
 		$data = Customer::find($id);
-		$data2 = User::all();
         $data->nama=$request->nama;
-        $data->id_cs=$data2->id;
+        $data->id_cs= $request->user()->id;
         $data->no_kpj=$request->no_kpj;
         $data->klaim=$request->klaim;
         $data->save();
