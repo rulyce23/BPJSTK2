@@ -74,7 +74,7 @@ birdSound.play();
 			
 					<div class="form-group">
 						<b>File Gambar</b><br/>
-						<input type="file" name="s_ktp"  accept="image/*" capture required="">
+						<input type="file" name="s_ktp" accept="image/*" capture="camera" required="">
 					</div>
       </div>
 	  <input type="submit" value="Upload" class="btn btn-primary">
