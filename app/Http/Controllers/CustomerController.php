@@ -21,8 +21,8 @@ class CustomerController extends Controller
 	public function PostcreateStep1(Request $request)
     {
         $validatedData = $request->validate([
-            'nama' => 'required|max:120|unique:t_pelanggan',
-            'no_kpj' => 'required|max:25|unique:t_pelanggan',
+            'nama' => 'required|max:100|unique:t_pelanggan',
+            'no_kpj' => 'required|max:20|unique:t_pelanggan',
         ]);
 		
         if(empty($request->session()->get('customer'))){

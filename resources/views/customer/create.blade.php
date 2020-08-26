@@ -59,11 +59,11 @@ birdSound.play();
                             @csrf
                             <div class="form-group">
                                 <label>Nama</label>
-                                <input type="text" value="{{ session()->get('customer.nama') }}" class="form-control" name="nama" maxlength="50" placeholder="Ketik Nama Anda Disini" required="" autofocus="">
+                                <input type="text" value="{{ session()->get('customer.nama') }}" class="form-control" name="nama" maxlength="100" placeholder="Ketik Nama Anda Disini" required="" autofocus="">
                             </div>
                             <div class="form-group">
                                     <label>Nomor KPJ</label>
-                                <input type="text" class="form-control" value="{{ session()->get('customer.no_kpj') }}" name="no_kpj" maxlength="25" placeholder="Ketik Nomor KPJ Anda Disini" required="">
+                                <input type="text" class="form-control" value="{{ session()->get('customer.no_kpj') }}" name="no_kpj" maxlength="20" placeholder="Ketik Nomor KPJ Anda Disini" required="">
                             </div>
 							<p class="text-primary"><b>Note : Mohon Pastikan Anda Telah Mengisi Data Dengan Benar</b></p>
                             <div class="form-group">
