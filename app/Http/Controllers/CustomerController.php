@@ -13,7 +13,7 @@ class CustomerController extends Controller
 	
     public function createStep1(Request $request)
     {
-        $customer = $request->session()->forget('customer');
+        $customer = $request->session()->get('customer');
 	 
         return view('customer.create',compact('customer'));
     }
@@ -220,7 +220,7 @@ public function PostcreateStep7(Request $request)
           	  $customer = $request->session()->get('customer');
         $customer->save();
        
-       
+       $customer = $request->session()->forget('customer');
        return redirect()->route('customer.create.step.one');
     }
 }
