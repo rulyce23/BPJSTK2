@@ -59,29 +59,29 @@
                         BPJSTK merupakan sebuah program jaminan sosial dan proteksi (perlindungan) yang ditujukan bagi pekerja Indonesia maupun pekerja asing yang bekerja di Indonesia sekurang-kurangnya enam bulan.
                      </p>
 					 <br><p class="home-subtitle font-weight-normal pt-4 mb-0" align="justify">BPJS Ketenagakerjaan itu sendiri merupakan hasil transformasi dari PT Jamsostek. Pasalnya PT Jamsostek inilah sebelumnya yang mengurusi masalah proteksi dan jaminan sosial ketenagakerjaan di Indonesia yang bertanggung jawab kepada presiden.
-
+					<br><br>
 					Dengan transformasi tersebut, seluruh kegiatan dan program-program dari PT Jamsostek dialihkan ke BPJS Ketenagakerjaan sehingga tidak perlu lagi melakukan pendaftaran ulang bagi peserta Jamsostek.</p> <br> <br><br><br><br><br><br><br>
 					 
                   
                   </div>
+                  
                </div>
                <div class="col-lg-6 order-lg-0 order-md-0 order-1 mt-lg-6 z-index10">
-                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	
                   <img src="img/icon.png " width="500" height="300"  class="img-fluid mt-auto" alt="">
 
                </div>
             </div>
          </div>
-         </section>        <section class="section bg-white whysepana" id="services">
+         </section>        
+		 <section class="section bg-white" id="services">
         <div class="container">
            <div class="row justify-content-center text-center">
-              <div class="col-lg-12">
+              
                  <h2 class="font-300 font-weight-bold">Mengapa Harus Mendaftar Dengan Kios-K BPJS ??</h2>
                  <p class="text-muted mt-4 title-subtitle mx-auto">
                   Ini Manfaat & Keuntungan yang diperoleh ketika menggunakan aplikasi Kios-K BPJS        
                  </p>
-              </div>
+          
            </div>
            <div class="row">
               <div class="col-lg-4">
