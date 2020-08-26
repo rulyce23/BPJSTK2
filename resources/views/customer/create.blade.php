@@ -25,8 +25,8 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-10">
-                <div class="card o-hidden border-1 shadow-sm my-5">
-                    <div class="card-body p-5">
+                <div class="card o-hidden border-1 shadow-sm my-6">
+                    <div class="card-body p-6">
                         @include('component.success')
                         @include('component.error')
 <script>

@@ -37,8 +37,8 @@ birdSound.play();
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-10">
-                <div class="card o-hidden border-1 shadow-sm my-5">
-                    <div class="card-body p-5">
+                <div class="card o-hidden border-1 shadow-sm my-6">
+                    <div class="card-body p-6">
                         @include('component.success')
                         @include('component.error')
 						
@@ -70,7 +70,7 @@ birdSound.play();
             <div class="text-center">
 			
 					<div class="form-group">
-						<label class="cameraButton">Take a picture
+						<label class="cameraButton">
 						<input type="file" name="s_kbpjs" accept="image/*;capture=camera"  required="">
 						</label>
 					</div>

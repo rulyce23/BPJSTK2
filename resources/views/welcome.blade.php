@@ -35,7 +35,7 @@
                     <div class="col-xl-2 col-md-3">
                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;						 
-						<img src="img/bpjs2.png" width="550" height="280" alt="">
+						<img src="img/bpjs2.png" width="450" height="230" alt="">
                     </div>
                 </div>
             </div>
