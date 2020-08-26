@@ -1,6 +1,6 @@
 <html lang="en"><head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <title>Selamat Datang Di BPJSTK</title>
 
@@ -20,7 +20,13 @@
       
     </head>
     <body>
-	
+	<style>
+	@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+  </style>
 	  <div class="slider_area" id="beranda">
         <div class="single_slider  d-flex align-items-center slider_bg_1">
             <div class="container">
@@ -46,19 +52,17 @@
             <div class="row justify-content-center">
                <div class="col-lg-6 order-lg-0 order-md-0 order-2 hassle">
                   <div class="text-left">
-                     <h2 class="text-uppercase font-weight-bold mx-auto mt-4">
-                      &nbsp; Selamat Datang Di BPJS &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ketenagakerjaan
-                     </h2>
+                     <h3 class="text-uppercase font-weight-bold mx-auto mt-3">
+                      Selamat Datang Di BPJS Ketenagakerjaan
+                     </h3>
                      <p class="home-subtitle font-weight-normal pt-4 mb-0" align="justify">
                         BPJSTK merupakan sebuah program jaminan sosial dan proteksi (perlindungan) yang ditujukan bagi pekerja Indonesia maupun pekerja asing yang bekerja di Indonesia sekurang-kurangnya enam bulan.
                      </p>
 					 <br><p class="home-subtitle font-weight-normal pt-4 mb-0" align="justify">BPJS Ketenagakerjaan itu sendiri merupakan hasil transformasi dari PT Jamsostek. Pasalnya PT Jamsostek inilah sebelumnya yang mengurusi masalah proteksi dan jaminan sosial ketenagakerjaan di Indonesia yang bertanggung jawab kepada presiden.
 
-					Dengan transformasi tersebut, seluruh kegiatan dan program-program dari PT Jamsostek dialihkan ke BPJS Ketenagakerjaan sehingga tidak perlu lagi melakukan pendaftaran ulang bagi peserta Jamsostek.</p> <br> <br><br>
+					Dengan transformasi tersebut, seluruh kegiatan dan program-program dari PT Jamsostek dialihkan ke BPJS Ketenagakerjaan sehingga tidak perlu lagi melakukan pendaftaran ulang bagi peserta Jamsostek.</p> <br> <br><br><br><br><br><br><br>
 					 
-                     <div class="pt-5">
-                        <a href="#" class="btn btn-outline-custom btn-round font-weight-bold">Daftar Gratis Untuk Pelayanan </a>
-                     </div>
+                  
                   </div>
                </div>
                <div class="col-lg-6 order-lg-0 order-md-0 order-1 mt-lg-6 z-index10">
