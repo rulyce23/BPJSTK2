@@ -57,14 +57,12 @@ birdSound.play();
                         </div>
 
                             <div class="form-check">
-								<label>2. Scan Kartu Vaklaring Riwayat Kerja</label>
+								<label>2. Scan Dokumen Riwayat Kerja</label>
 								<p class="hint">Letakkan Dokumen Anda pada Mesin Scanner kemudian klik tombol Scan</p>
 							
 					
                             </div>
-								<p class="text-primary"><b>Note : Mohon Pastikan Anda Telah Mengisi Data Dengan Benar</b></p>
-								
-								
+									<p class="text-primary"><b>Note : Mohon untuk siapkan berkas sesuai petunjuk tahapan, dan Pastikan Anda Telah Mengupload ataupun Scan mengambil Data Dengan Benar</b></p>
 
 
 				<form action="{{ route('customer.create.step.four.post')}}" method="POST" enctype="multipart/form-data">

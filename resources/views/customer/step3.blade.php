@@ -55,14 +55,14 @@ birdSound.play();
                             </h1>
 
                         </div>
-
+							
                             <div class="form-check">
-								<label>Scan KTP,Vaklaring,KK,BPJS,& Tabungan</label>
+								<label>1. Scan KTP</label>
 								<p class="hint">Letakkan Dokumen Anda pada Mesin Scanner kemudian klik tombol Scan</p>
 							
 					
                             </div>
-								<p class="text-primary"><b>Note : Mohon Pastikan Anda Telah Mengisi Data Dengan Benar</b></p>
+								<p class="text-primary"><b>Note : Mohon untuk siapkan berkas sesuai petunjuk tahapan, dan Pastikan Anda Telah Mengupload ataupun Scan mengambil Data Dengan Benar</b></p>
 								
 								
 

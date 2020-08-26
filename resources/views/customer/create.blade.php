@@ -65,7 +65,7 @@ birdSound.play();
                                     <label>Nomor KPJ</label>
                                 <input type="text" class="form-control" value="{{ session()->get('customer.no_kpj') }}" name="no_kpj" maxlength="20" placeholder="Ketik Nomor KPJ Anda Disini" required="">
                             </div>
-							<p class="text-primary"><b>Note : Mohon Pastikan Anda Telah Mengisi Data Dengan Benar</b></p>
+								<p class="text-primary"><b>Note : Sebelum Mengisi Mohon untuk siapkan berkas / Anda Dapat Mengambil Gambar Melalui Device Anda Berupa File Foto JPG KTP,Kartu KK,Riwayat Kerja/Hidup,Kartu Bpjs,Dan Buku Tabungan Terima Kasih</b></p>
                             <div class="form-group">
 							<center>
                                 <button type="submit" class="btn btn-success" size="15px">

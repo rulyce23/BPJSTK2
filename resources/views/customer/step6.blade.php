@@ -62,10 +62,7 @@ birdSound.play();
 							
 					
                             </div>
-								<p class="text-primary"><b>Note : Mohon Pastikan Anda Telah Mengisi Data Dengan Benar</b></p>
-								
-								
-
+								<p class="text-primary"><b>Note : Mohon untuk siapkan berkas sesuai petunjuk tahapan, dan Pastikan Anda Telah Mengupload ataupun Scan mengambil Data Dengan Benar</b></p>
 
 				<form action="{{ route('customer.create.step.six.post')}}" method="POST" enctype="multipart/form-data">
 								 @csrf

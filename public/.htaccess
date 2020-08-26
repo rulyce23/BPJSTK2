@@ -5,6 +5,7 @@
 
     RewriteEngine On
 
+	Allow from 192.168.137.1
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
     RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
