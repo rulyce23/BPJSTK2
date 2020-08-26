@@ -75,6 +75,7 @@ birdSound.play();
 					<div class="form-group">
 						<b>File Gambar</b><br/>
 						<input type="file" name="s_vaklaring" accept="image/*" capture="camera" required="">
+						<img id="frame">
 					</div>
       </div>
 	  <input type="submit" value="Upload" class="btn btn-primary">
@@ -85,7 +86,16 @@ birdSound.play();
                 </div>
             </div>
         </div>
-		
+		<script>
+  var camera = document.getElementById('camera');
+  var frame = document.getElementById('frame');
+
+  camera.addEventListener('change', function(e) {
+    var file = e.target.files[0]; 
+    // Do something with the image file.
+    frame.src = URL.createObjectURL(file);
+  });
+</script>
     </div>
 	
 
