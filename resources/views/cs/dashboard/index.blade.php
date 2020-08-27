@@ -1,7 +1,11 @@
 @extends('layouts2')
 @section('title','Dashboard')
 @section('content')
-
+<script type="text/javascript">
+   if (screen.width <= 699) {
+	document.location = "./create";
+}
+</script>
 <div class="col-xl-3 col-md-7 mb-4">
     <a href="#" style="text-decoration:none;">
     <div class="card border-left-primary shadow-sm h-100 py-2">

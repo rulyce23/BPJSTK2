@@ -1,6 +1,11 @@
 @extends('layouts2')
 @section('title','Tambah Data')
 @section('content')
+<script type="text/javascript">
+   if (screen.width <= 699) {
+	document.location = "./create";
+}
+</script>
 <div class="col-lg-12">
     {{-- <div class="card border-left-primary"> --}}
     <div class="card mb-4">

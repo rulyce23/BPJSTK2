@@ -1,6 +1,11 @@
 @extends('layouts2')
 @section('title','Edit Pelanggan')
 @section('content')
+<script type="text/javascript">
+   if (screen.width <= 699) {
+	document.location = "./create";
+}
+</script>
 <div class="col-lg-6">
     {{-- <div class="card border-left-primary"> --}}
     <div class="card shadow-sm mb-4">

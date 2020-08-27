@@ -1,6 +1,11 @@
 @extends('layouts2')
 @section('title','Dashboard')
 @section('content')
+<script type="text/javascript">
+   if (screen.width <= 699) {
+	document.location = "./create";
+}
+</script>
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-10">

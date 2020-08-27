@@ -17,7 +17,11 @@
     <link href="{{asset('backend/css/sb-admin-2.min.css')}}" rel="stylesheet">
 
 </head>
-
+<script type="text/javascript">
+   if (screen.width <= 699) {
+	document.location = "./create";
+}
+</script>
 <body class="bg-gradient-success">
     <div class="container">
         <div class="row justify-content-center">
