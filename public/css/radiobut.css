@@ -1,0 +1,42 @@
+.cc-selector input{
+    margin:0;padding:0;
+    -webkit-appearance:none;
+       -moz-appearance:none;
+            appearance:none;
+}
+
+.cc-selector-2 input{
+    position:absolute;
+    z-index:999;
+}
+
+.jhk{background-image:url(/./img/jht.png);}
+.jkk{background-image:url(/./img/jkk2.png);}
+.jkm{background-image:url(/./img/jkk.png);}
+.jp{background-image:url(/./img/jp.png);}
+
+.cc-selector-2 input:active +.drinkcard-cc, .cc-selector input:active +.drinkcard-cc{opacity: .9;}
+.cc-selector-2 input:checked +.drinkcard-cc, .cc-selector input:checked +.drinkcard-cc{
+    -webkit-filter: none;
+       -moz-filter: none;
+            filter: none;
+}
+.drinkcard-cc{
+    cursor:pointer;
+    background-size:contain;
+    background-repeat:no-repeat;
+    width:120px;height:76px;
+    -webkit-transition: all 100ms ease-in;
+       -moz-transition: all 100ms ease-in;
+            transition: all 100ms ease-in;
+    -webkit-filter: brightness(1.8) grayscale(0) opacity(1);
+       -moz-filter: brightness(1.8) grayscale(0) opacity(1);
+            filter: brightness(1.8) grayscale(0) opacity(1);
+}
+.drinkcard-cc:hover{
+    -webkit-filter: brightness(1.8) grayscale(0) opacity(1);
+       -moz-filter: brightness(1.8) grayscale(0) opacity(1);
+            filter: brightness(1.8) grayscale(0) opacity(1);
+}
+
+/* Extras */

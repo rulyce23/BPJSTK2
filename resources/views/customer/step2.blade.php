@@ -16,6 +16,7 @@
 
     <!-- Custom styles for this template-->
     <link href="{{asset('frontend/css/sb-admin-2.min.css')}}" rel="stylesheet">
+    <link href="{{asset('css/radiobut.css')}}" rel="stylesheet">
 
 </head>
 <script>
@@ -50,9 +51,10 @@ birdSound.play();
                         <form class="user" action="{{ route('customer.create.step.two.post')}}" method="POST">
                             @csrf
                             <div class="form-check">
+							<center>
 								<label>Silahkan Pilih Jenis Klaim :</label>
-								
-								
+							</center>	
+							
 								@if (count($errors) > 0)
 							<div class="alert alert-danger">
 							<strong>Whoops!</strong> There were some problems with your input.
@@ -65,19 +67,26 @@ birdSound.play();
 							@endif
 							
 							
+								<br>
+							<div class="cc-selector-2">
+							<center>
+								<input id="jhk" type="radio" name="klaim" value="JHK" {{ ($customer->is_active=="JHK")? "checked" : "" }} />
+								<label class="drinkcard-cc jhk" for="jhk"></label>
+								<input id="jkm" type="radio" name="klaim" value="JKM" {{ ($customer->is_active=="JKM")? "checked" : "" }} />
+								<label class="drinkcard-cc jkm"for="jkm"></label>
+								<input id="jkk" type="radio" name="klaim" value="JKK" {{ ($customer->is_active=="JKK")? "checked" : "" }} />
+								<label class="drinkcard-cc jkk"for="jkk"></label>
+								<input id="jp" type="radio" name="klaim" value="JP" {{ ($customer->is_active=="JP")? "checked" : "" }} />
+								<label class="drinkcard-cc jp"for="jp"></label>
+							</center>
+							</div>
 							<!-- Material inline 2 -->
-							<input type="radio"  id="option1" name="klaim" value="JHK"  {{ ($customer->is_active=="JHK")? "checked" : "" }} >JHK</label>
-
-							<input type="radio" id="option2" name="klaim" value="JKM" {{ ($customer->is_active=="JKM")? "checked" : "" }} >JKM</label>
-							
-							<input type="radio" id="option3" name="klaim" value="JKK" {{ ($customer->is_active=="JKK")? "checked" : "" }} >JKK</label>
-							
-							<input type="radio" id="option4" name="klaim" value="JP" {{ ($customer->is_active=="JP")? "checked" : "" }} >JP</label>
+						
 							
                             </div>
-							
+									<center>
 								<p class="text-primary"><b>Note : Mohon Pastikan Anda Telah Memilih Klaim Dengan Benar</b></p>
-                           
+									</center>
                             <div class="form-group">
 								<center>
                                 <button type="submit" class="btn btn-success" size="15px">
