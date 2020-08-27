@@ -10,7 +10,7 @@ use Carbon\Carbon;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Hash;
 use Auth;
-use App\Role;
+
 
 class UserController extends Controller
 {
@@ -18,12 +18,15 @@ class UserController extends Controller
     public function __construct()
     {
         $this->user = new User();
-        $this->role = new Role();
+      
     }
 
     public function index()
     {
-        return view('backend.user.index');
+		
+		 $user = User::all();
+		 
+        return view('cs.user.users',compact('user',$user));
     }
 
     public function source(){
@@ -40,19 +43,17 @@ class UserController extends Controller
                 return title_case($data->name);
 
             })
-            ->addColumn('role', function ($data) {
-                return title_case($data->role->name);
-            })
+            
             ->addIndexColumn()
-            ->addColumn('action', 'backend.user.index-action')
+            ->addColumn('action', 'cs.user.users-action')
             ->rawColumns(['action'])
             ->toJson();
     }
 
     public function create()
     {
-        $role = $this->role;
-        return view('backend.user.create',compact(['role']));
+        
+        return view('cs.user.create');
     }
 
     public function store(Request $request)
@@ -62,7 +63,7 @@ class UserController extends Controller
             $request = $request->merge(['password'=>Hash::make($request->password)]);
             $user = $this->user->create($request->all());
             DB::commit();
-            return redirect()->route('user.index')->with('success-message','Data telah disimpan');
+            return redirect()->route('cs.user.users')->with('success-message','Data telah disimpan');
         } catch (\Exception $e) {
             DB::rollback();
             return redirect()->back()->with('error-message',$e->getMessage());
@@ -80,9 +81,9 @@ class UserController extends Controller
 
     public function edit($id)
     {
-        $role = $this->role;
+      
         $data = $this->user->find($id);
-        return view('backend.user.edit',compact(['data','role']));
+        return view('cs.user.edit',compact(['data']));
 
     }
 
@@ -93,7 +94,7 @@ class UserController extends Controller
             $request = $request->merge(['password'=>Hash::make($request->password)]);
             $this->user->find($id)->update($request->all());
             DB::commit();
-            return redirect()->route('user.index',$request->menu_id)->with('success-message','Data telah dirubah');
+            return redirect()->route('cs.user.users',$request->menu_id)->with('success-message','Data telah dirubah');
         } catch (\Exception $e) {
             DB::rollback();
             return redirect()->back()->with('error-message',$e->getMessage());

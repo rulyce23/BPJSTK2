@@ -54,17 +54,17 @@ Route::get('/cs', function () {
     Route::delete('/cs/hapus/{id}', 'CsController@destroy')->name('cs.dashboard.hapus');
     Route::patch('/cs/verifikasi/{id}', 'CsController@verifikasi')->name('cs.dashboard.verifikasi');
     Route::patch('/cs/tolak/{id}', 'CsController@tolak')->name('cs.dashboard.tolak');
-    Route::get('/cs/user','UserController@index')->name('user.index');
-    Route::get('/cs/user/create','UserController@create')->name('user.create');
-    Route::get('/cs/user/users','UserController@create')->name('cs.user.users');
-    Route::get('/cs/user/source','UserController@source')->name('user.source');
-    Route::get('/cs/user/{id}/edit','UserController@edit')->name('user.edit');
-    Route::get('/cs/user/{id}/show','UserController@show')->name('user.show');
-    Route::get('/cs/user/{id}/destroy','UserController@destroy')->name('user.destroy');
-    Route::post('/cs/user/store','UserController@store')->name('user.store');
-    Route::post('/cs/user/{id}/update','UserController@update')->name('user.update');
-    Route::get('/cs/user/change','UserController@change')->name('user.change');
-    Route::post('/cs/user/updatePassword','UserController@updatePassword')->name('user.updatePassword');
+    Route::get('/cs/user/users','UserController@index')->name('cs.user.users');
+    Route::get('/cs/user/create','UserController@create')->name('cs.user.create');
+  //  Route::get('/cs/user/users','UserController@create')->name('cs.user.users');
+    Route::get('/cs/user/source','UserController@source')->name('cs.user.source');
+    Route::get('/cs/user/{id}/edit','UserController@edit')->name('cs.user.edit');
+    Route::get('/cs/user/{id}/show','UserController@show')->name('cs.user.show');
+    Route::get('/cs/user/{id}/destroy','UserController@destroy')->name('cs.user.destroy');
+    Route::post('/cs/user/store','UserController@store')->name('cs.user.store');
+    Route::post('/cs/user/{id}/update','UserController@update')->name('cs.user.update');
+    Route::get('/cs/user/change','UserController@change')->name('cs.user.change');
+    Route::post('/cs/user/updatePassword','UserController@updatePassword')->name('cs.user.updatePassword');
 
 Route::get('/welcome', function () {
     return view('welcome');

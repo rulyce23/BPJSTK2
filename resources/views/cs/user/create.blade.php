@@ -1,4 +1,4 @@
-@extends('backend.layouts')
+@extends('layouts2')
 @section('title','Tambah Data')
 @section('content')
 <div class="col-lg-12">
@@ -8,7 +8,7 @@
                 <h6 class="m-0 font-weight-bold text-primary">@yield('title')</h6>
         </div>
         <div class="card-body">
-            <form action="{{route('user.store')}}" method="post" enctype="multipart/form-data">
+            <form action="{{route('cs.user.store')}}" method="post" enctype="multipart/form-data">
                 @csrf
                 <div class="row">
                     <div class="col">
@@ -17,16 +17,7 @@
                           <input type="text" name="name" id="" class="form-control border-dark-50" required="">
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="form-group">
-                          <label>Role</label>
-                          <select name="role_id" class="form-control select2" required="">
-                                @foreach ($role->get() as $row)
-                                <option value="{{$row->id}}">{{title_case($row->name)}}</option>
-                                @endforeach
-                          </select>
-                        </div>
-                    </div>
+                  
                 </div>
                 <div class="row">
                     <div class="col">
@@ -38,7 +29,7 @@
                     <div class="col">
                         <div class="form-group">
                           <label>Password</label>
-                          <input type="text" name="password" id="" class="form-control border-dark-50" required="">
+                          <input type="password" name="password" id="" class="form-control border-dark-50" required="">
                         </div>
                     </div>
                 </div>
@@ -55,7 +46,7 @@
                     <div class="col">
                         <div class="form-gorup">
                             <button type="submit" class="btn btn-primary shadow-sm">Simpan</button>
-                            <a class="btn btn-light shadow-sm" href="{{route('user.index')}}">Batal</a>
+                            <a class="btn btn-light shadow-sm" href="{{route('cs.user.users')}}">Batal</a>
                         </div>
                     </div>
                 </div>

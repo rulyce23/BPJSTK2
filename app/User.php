@@ -19,7 +19,7 @@ class User extends Authenticatable
     public $incrementing = false;
 
     protected $fillable = [
-        'name','username','email','password','role_id'
+        'name','username','email','password'
     ];
 
     /**
@@ -31,8 +31,5 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
-    public function role()
-    {
-        return $this->belongsTo('App\Role')->withTrashed();
-    }
+   
 }

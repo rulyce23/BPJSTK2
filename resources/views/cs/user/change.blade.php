@@ -8,7 +8,7 @@
             <h6 class="m-0 font-weight-bold text-primary">@yield('title')</h6>
         </div>
         <div class="card-body">
-            <form action="{{route('user.updatePassword')}}" method="post" enctype="multipart/form-data">
+            <form action="{{route('cs.user.updatePassword')}}" method="post" enctype="multipart/form-data">
                 @csrf
                 <div class="row">
                     <div class="col">
